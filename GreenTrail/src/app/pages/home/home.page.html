@@ -4,19 +4,46 @@
 
 <ion-content  [fullscreen]="true">
   <ion-header collapse="condense">
+    <link rel="stylesheet" href="home.page.scss">
   </ion-header>
 
-  <button id="sideBarButton">
-    <ion-icon name="menu-sharp" class="icon"></ion-icon>
-  </button>
-<ion-footer>
-  <button id="searchButton">
-  <ion-icon name="search" class="icon" id="searchIcon"></ion-icon>
-    <p class="textButton" >Search..</p>
-  </button>
+    <ion-menu   side="start" menuId="first" contentId="main">
 
-  <button id="elementiSalvatiButton"><img src="assets/icon/bookmark_border_24px.png"></button>
-  <button id="gpsButton"><img src="assets/icon/Gps%20fixed.png">
-  </button>
+      <ion-content>
+        <ion-button id="avatar" color="dark" size="large">
+          <ion-img  src="assets/icon/User Images.png"></ion-img>
+        </ion-button>
+        <p id="km">Km</p>
+        <ion-label id="kmL" color="light" >2.5</ion-label>
+        <p id="pe">PE</p>
+        <ion-label id="peL" color="light" >100</ion-label>
+          <ion-button  color="Dark" fill="clear" id="iMieiPrecorsiButton" >I mie percorsi</ion-button>
+          <ion-button color="Dark" fill="clear" id="mappeSalvateButton">Mappe salvate</ion-button>
+          <ion-button slot="" color="Dark" id="segnalazionButton" >Segnalazioni</ion-button>
+
+      </ion-content>
+      <ion-footer>
+        <p id="appVersion">@Green Trail v1.0.0  - </p>
+        <a id="privacyLink" href="">Privacy Policy</a>
+        <ion-img id="it" src="assets/icon/icons8-italy-48 1.png" ></ion-img>
+        <ion-img id="ingl" src="assets/icon/icons8-great-britain-48 1.png" ></ion-img>
+      </ion-footer>
+    </ion-menu>
+    <div class="ion-page" id="main">
+      <ion-content class="ion-padding">
+        <ion-menu-toggle>
+          <ion-menu-button color="dark" id="sideBarButton"></ion-menu-button>
+        </ion-menu-toggle>
+      </ion-content>
+    </div>
+<ion-footer>
+  <ion-button id="searchButton">
+  <ion-icon name="search" class="icon" id="searchIcon"></ion-icon>
+    Search..
+  </ion-button>
+
+  <ion-button color="dark" id="elementiSalvatiButton"><ion-img src="assets/icon/bookmark_border_24px.png"></ion-img></ion-button>
+  <ion-button color="dark" id="gpsButton"><ion-img src="assets/icon/Gps%20fixed.png"></ion-img>
+  </ion-button>
 </ion-footer>
 </ion-content>

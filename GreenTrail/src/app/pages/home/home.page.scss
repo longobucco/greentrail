@@ -1,5 +1,136 @@
+ion-menu{
+--ion-background-color:black;
+}
+#appVersion{
+  color: white;
+  position: absolute;
+  font-size: x-small;
+  top: -42px;
+  left:13px
+}
+#privacyLink{
+  position: absolute;
+  font-size: x-small;
+  top: -32px;
+  left:115px
+}
+#it{
+  position:absolute;
+  width: 28px;
+  height: 24px;
+  top: -42px;
+  left: 220px;
+}
+#ingl{
+  position:absolute;
+  width: 28px;
+  height: 24px;
+  top: -42px;
+  left: 187px;
+}
+ion-label{
+  position: absolute;
+  color: white;
+  font-style: normal;
+  left: 140px;
+  top: 68px;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 22px;
+}
+#peL{
+  position: absolute;
+  color: white;
+  font-style: normal;
+  left: 205px;
+  top: 67px;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 22px;
+}
+#pe{
+  position: absolute;
+  color: white;
+  font-style: normal;
+  left: 170px;
+  top: 51px;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 22px;
+}
+#kmL{
+  position: absolute;
+  color: white;
+  font-style: normal;
+  left: 125px;
+  top: 68px;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 22px;
+}
+#km{
+  position: absolute;
+  color: white;
+  font-style: normal;
+  left: 90px;
+  top: 51px;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 22px;
+}
+#avatar{
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  left: 14px;
+  top: 26px;
+  font-size:1px;
+}
+ion-menu-button{
+  vertical-align:300px;
+}
+ion-icon{
+font-size: 70px;
+}
+#iMieiPrecorsiButton{
+  text-transform: inherit;
+  position: absolute;
+  width: 151px;
+  height: 25px;
+  left: 1px;
+  top: 167px;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 25px;
+}
+#mappeSalvateButton{
+  text-transform: inherit;
+  position: absolute;
+  width: 151px;
+  height: 25px;
+  left: 1px;
+  top: 210px;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 25px;
+}
+#segnalazionButton{
+  text-transform: inherit;
+  position: absolute;
+  width: 140px;
+  height: 25px;
+  left: 1px;
+  top: 253px;
+  text-align: left;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 25px;
 
 
+}
 #sideBarButton{
   position: absolute;
   width: 50px;
@@ -16,25 +147,22 @@
   height: 45px;
   left: 11px;
   top: 605px;
-
+  font-size: 1px;
   background: black;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
 }
-.icon{
-  color: black;
-  position: absolute;
-  width: 40px;
-  height: 35px;
-  left: 5px;
-  top: 3px;
-}
+
+
+
 #searchButton{
   border-radius: 10px;
+  -webkit-text-fill-color: black;
+  text-transform: inherit;
   position: absolute;
   width: 175px;
   height: 40px;
-  left: 73px;
+  left: 70px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   top: 610px;
   background-color: #FFFFFF;
@@ -52,7 +180,7 @@
   position: absolute;
   width: 35px;
   height: 27px;
-  left: 5px;
+  left: -10px;
   top: 8px;
 }
 #gpsButton{
@@ -61,6 +189,7 @@
   height: 45px;
   right: 15px;
   top: 605px;
+  font-size: 1px;
   background: black;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
