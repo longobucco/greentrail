@@ -2,13 +2,12 @@
 
 
 
-<ion-content  [fullscreen]="true">
+<ion-content  id="content" [fullscreen]="true">
+
   <ion-header collapse="condense">
     <link rel="stylesheet" href="home.page.scss">
   </ion-header>
-
     <ion-menu   side="start" menuId="first" contentId="main">
-
       <ion-content>
         <ion-button id="avatar" color="dark" size="large">
           <ion-img  src="assets/icon/User Images.png"></ion-img>
@@ -31,13 +30,13 @@
     </ion-menu>
     <div class="ion-page" id="main">
       <ion-content class="ion-padding">
-        <ion-menu-toggle>
+        <ion-menu-toggle >
           <ion-menu-button color="dark" id="sideBarButton"></ion-menu-button>
         </ion-menu-toggle>
       </ion-content>
     </div>
 <ion-footer>
-  <ion-button id="searchButton">
+  <ion-button  id="searchButton">
   <ion-icon name="search" class="icon" id="searchIcon"></ion-icon>
     Search..
   </ion-button>
@@ -46,4 +45,6 @@
   <ion-button color="dark" id="gpsButton"><ion-img src="assets/icon/Gps%20fixed.png"></ion-img>
   </ion-button>
 </ion-footer>
+  <div #map id="map">
+  </div>
 </ion-content>
