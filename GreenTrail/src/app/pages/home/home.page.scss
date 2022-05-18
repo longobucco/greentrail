@@ -1,5 +1,8 @@
 #map {
-  height: 100%;
+
+    width: 100%;
+    height: 100%;
+
 }
 ion-menu{
 --ion-background-color:black;
@@ -8,8 +11,6 @@ ion-menu{
   color: white;
   position: absolute;
   font-size: x-small;
-  top: -42px;
-  left:13px
 }
 #privacyLink{
   position: absolute;

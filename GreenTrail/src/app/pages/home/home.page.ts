@@ -1,26 +1,36 @@
-import { Component } from '@angular/core';
-import{ViewChild,ElementRef} from '@angular/core';
-declare let google: any;
+import { Component ,OnInit} from '@angular/core';
+
+declare let google;
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
 })
-export class HomePage {
-  map: any;
-  @ViewChild('map',{read:ElementRef,static: false})mapRef: ElementRef;
+export class HomePage  implements OnInit{
+  map: null;
 
-  constructor() {}
-  ionViewDidEnter(){
-    this.vediMappa();
+
+  constructor() {
   }
-  vediMappa(){
-    const location =new google.maps.LatLng(	42.366 ,13.3944);
-    const posizione= {
-      center:location,
-      zoom:15,
-      disableDefaultUI:true
-    };
-    this.map=new google.maps.Map(this.mapRef.nativeElement);
+
+  ionViewDidEnter() {
+    this.loadMap();
+  }
+
+  loadMap() {
+    const mapEle: HTMLElement = document.getElementById('map');
+    const myLatLng = {lat: 42.3506978, lng: 13.3999338};
+    this.map = new google.maps.Map(mapEle, {
+      center: myLatLng,
+      zoom: 12
+    });
+
+    google.maps.event.addListenerOnce(this.map, 'idle', () => {
+      mapEle.classList.add('show-map');
+    });
+  }
+
+  ngOnInit(){
+    this;
   }
 }
